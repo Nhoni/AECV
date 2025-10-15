@@ -1,0 +1,126 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Association Chemin de Vie</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages/contact.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="container">
+        <div class="logo">
+            <i class="fas fa-hands-helping"></i>
+            <h1>Chemin de Vie</h1>
+        </div>
+        
+        <button class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="temoignages.html">Témoignages</a></li>
+                <li><a href="equipe.html">Équipe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.paypal.com/donate" class="btn-donate" target="_blank">
+                <i class="fas fa-heart"></i> Faire un don
+            </a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <main>
+    <div class="contact-container">
+        <section class="contact-hero fade-in">
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes à votre écoute pour toute question ou projet</p>
+        </section>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-method fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Notre adresse</h3>
+                        <p>12 Rue de l'Espérance<br>75010 Paris, France</p>
+                    </div>
+                </div>
+
+                <div class="contact-method fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Téléphone</h3>
+                        <p>+33 1 42 38 56 94</p>
+                        <p>Lun - Ven : 9h - 18h</p>
+                    </div>
+                </div>
+
+                <div class="contact-method fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>contact@chemin-de-vie.org</p>
+                        <p>Réponse sous 24h</p>
+                    </div>
+                </div>
+
+                <div class="contact-method fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Devenir bénévole</h3>
+                        <p>benevolat@chemin-de-vie.org</p>
+                        <p>Rejoignez notre équipe</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form fade-in">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject">
+                            <option value="">Choisir un sujet</option>
+                            <option value="don">Faire un don</option>
+                            <option value="benevolat">Devenir bénévole</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="projet">Projet de partenariat</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" placeholder="Votre message..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

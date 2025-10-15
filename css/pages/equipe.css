@@ -1,0 +1,192 @@
+/* Page Équipe - Mobile First */
+.team-container {
+    width: 100%;
+}
+
+.team-hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, var(--primary), #1e3d72);
+    color: var(--white);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.team-hero h1 {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.team-hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.team-member {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    position: relative;
+    transition: var(--transition);
+}
+
+.team-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.member-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: 3px solid var(--white);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.member-role {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    padding: 0.3rem 1rem;
+    background: rgba(230, 164, 0, 0.1);
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.member-description {
+    color: var(--text);
+    opacity: 0.8;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+}
+
+.member-social {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.social-link {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.social-link:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* ===== DESKTOP STYLES ===== */
+@media (min-width: 768px) {
+    .team-hero {
+        padding: 3rem 2rem;
+    }
+    
+    .team-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .team-member {
+        padding: 2rem;
+    }
+    
+    .member-avatar {
+        width: 100px;
+        height: 100px;
+        font-size: 2.2rem;
+    }
+    
+    .team-member h3 {
+        font-size: 1.4rem;
+    }
+    
+    .member-role {
+        font-size: 1rem;
+    }
+    
+    .member-description {
+        font-size: 1rem;
+    }
+    
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    /* Animations desktop seulement */
+    .team-member:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    
+    .team-member:hover .member-avatar {
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 1024px) {
+    .team-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .member-avatar {
+        width: 120px;
+        height: 120px;
+        font-size: 2.5rem;
+    }
+}

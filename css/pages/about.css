@@ -1,0 +1,144 @@
+/* Page À propos - Mobile First */
+.about-content {
+    width: 100%;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, var(--primary), #1e3d72);
+    color: var(--white);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.about-hero h1 {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about-hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, var(--primary), #1e3d72);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary);
+    display: block;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.mission-section, .values-section {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--secondary);
+}
+
+.mission-section h2, .values-section h2 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.values-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.values-section li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.values-section li:last-child {
+    border-bottom: none;
+}
+
+.values-section li::before {
+    content: '✓';
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+/* ===== DESKTOP STYLES ===== */
+@media (min-width: 768px) {
+    .about-hero {
+        padding: 3rem 2rem;
+    }
+    
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+    
+    .stat-card {
+        padding: 2rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .mission-section, .values-section {
+        padding: 2.5rem;
+        margin: 2rem 0;
+    }
+    
+    .mission-section h2, .values-section h2 {
+        font-size: 1.8rem;
+        gap: 1rem;
+    }
+    
+    .values-section li {
+        padding: 1rem 0;
+        gap: 1rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .stat-number {
+        font-size: 3rem;
+    }
+}
