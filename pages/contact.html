@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,95 +34,303 @@
         </nav>
     </header>
 
-   <main>
-    <div class="contact-container">
-        <section class="contact-hero fade-in">
+    <main>
+    <!-- Hero Section -->
+    <section class="contact-hero fade-in">
+        <div class="container">
             <h1>Contactez-nous</h1>
-            <p>Nous sommes à votre écoute pour toute question ou projet</p>
-        </section>
+            <p>Nous sommes à votre écoute pour toute question, projet ou demande d'information</p>
+        </div>
+    </section>
 
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-method fade-in">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
+    <!-- Informations de contact principales -->
+    <section class="contact-main-section fade-in">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Prendre contact</h2>
+                    <p>Plusieurs moyens pour nous joindre selon votre besoin</p>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>+33 1 42 38 56 94</p>
+                            <p class="contact-hours">Lun - Ven : 9h - 18h<br>Sam : 9h - 12h</p>
+                            <a href="tel:+33142385694" class="contact-action">Appeler maintenant</a>
+                        </div>
                     </div>
-                    <div class="contact-details">
-                        <h3>Notre adresse</h3>
-                        <p>12 Rue de l'Espérance<br>75010 Paris, France</p>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>contact@chemin-de-vie.org</p>
+                            <p class="contact-hours">Réponse sous 24h</p>
+                            <a href="mailto:contact@chemin-de-vie.org" class="contact-action">Envoyer un email</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Adresse</h3>
+                            <p>12 Rue de l'Espérance<br>75010 Paris, France</p>
+                            <p class="contact-hours">Sur rendez-vous</p>
+                            <a href="https://maps.google.com" target="_blank" class="contact-action">Voir sur la carte</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Bénévolat</h3>
+                            <p>benevolat@chemin-de-vie.org</p>
+                            <p class="contact-hours">Réunion d'information mensuelle</p>
+                            <a href="mailto:benevolat@chemin-de-vie.org" class="contact-action">Devenir bénévole</a>
+                        </div>
+                    </div>
+
+                    <!-- Réseaux sociaux -->
+                    <div class="social-section">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-link youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="#" class="social-link linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="contact-method fade-in">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Téléphone</h3>
-                        <p>+33 1 42 38 56 94</p>
-                        <p>Lun - Ven : 9h - 18h</p>
-                    </div>
+                <div class="contact-form">
+                    <h2>Envoyez-nous un message</h2>
+                    <form class="contact-form-main">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" required>
+                                <option value="">Choisir un sujet</option>
+                                <option value="don">Faire un don</option>
+                                <option value="benevolat">Devenir bénévole</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="projet">Projet de partenariat</option>
+                                <option value="presse">Relation presse</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="urgency">Urgence</label>
+                            <div class="urgency-options">
+                                <label class="urgency-option">
+                                    <input type="radio" name="urgency" value="normal">
+                                    <span class="radio-custom"></span>
+                                    Normale
+                                </label>
+                                <label class="urgency-option">
+                                    <input type="radio" name="urgency" value="important">
+                                    <span class="radio-custom"></span>
+                                    Importante
+                                </label>
+                                <label class="urgency-option">
+                                    <input type="radio" name="urgency" value="urgent">
+                                    <span class="radio-custom"></span>
+                                    Urgente
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" placeholder="Décrivez votre demande en détail..." required></textarea>
+                            <div class="char-count"><span id="char-counter">0</span>/500 caractères</div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" required>
+                                <span class="checkbox-custom"></span>
+                                J'accepte la politique de confidentialité *
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox">
+                                <span class="checkbox-custom"></span>
+                                Je souhaite recevoir la newsletter
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
                 </div>
-
-                <div class="contact-method fade-in">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Email</h3>
-                        <p>contact@chemin-de-vie.org</p>
-                        <p>Réponse sous 24h</p>
-                    </div>
-                </div>
-
-                <div class="contact-method fade-in">
-                    <div class="contact-icon">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Devenir bénévole</h3>
-                        <p>benevolat@chemin-de-vie.org</p>
-                        <p>Rejoignez notre équipe</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact-form fade-in">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Nom complet *</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <select id="subject">
-                            <option value="">Choisir un sujet</option>
-                            <option value="don">Faire un don</option>
-                            <option value="benevolat">Devenir bénévole</option>
-                            <option value="information">Demande d'information</option>
-                            <option value="projet">Projet de partenariat</option>
-                            <option value="autre">Autre</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" placeholder="Votre message..." required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">
-                        <i class="fas fa-paper-plane"></i> Envoyer le message
-                    </button>
-                </form>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Carte et accès -->
+    <section class="map-section fade-in">
+        <div class="container">
+            <h2>Nous trouver</h2>
+            <div class="map-content">
+                <div class="map-info">
+                    <h3>Accès</h3>
+                    <div class="transport-options">
+                        <div class="transport-option">
+                            <i class="fas fa-subway"></i>
+                            <div>
+                                <strong>Métro</strong>
+                                <p>Ligne 5 - Jacques Bonsergent<br>Ligne 7 - Poissonnière</p>
+                            </div>
+                        </div>
+                        <div class="transport-option">
+                            <i class="fas fa-bus"></i>
+                            <div>
+                                <strong>Bus</strong>
+                                <p>Lignes 38, 39, 47<br>Arrêt Jacques Bonsergent</p>
+                            </div>
+                        </div>
+                        <div class="transport-option">
+                            <i class="fas fa-bicycle"></i>
+                            <div>
+                                <strong>Vélib'</strong>
+                                <p>Station n°10012<br>12 Rue de l'Espérance</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="parking-info">
+                        <h4>Parking à proximité</h4>
+                        <ul>
+                            <li>Parking Indigo Paris Strasbourg Saint-Denis - 5 min à pied</li>
+                            <li>Parking Gare de l'Est - 8 min à pied</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="map-placeholder">
+                    <div class="map-image">
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Carte de localisation">
+                        <div class="map-overlay">
+                            <button class="map-btn">
+                                <i class="fas fa-map-marked-alt"></i>
+                                Ouvrir dans Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Contact -->
+    <section class="faq-section fade-in">
+        <div class="container">
+            <h2>Questions fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment faire un don ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Vous pouvez faire un don via PayPal sur notre site, par virement bancaire, ou en nous envoyant un chèque à l'adresse de l'association. Tous les dons donnent droit à un reçu fiscal.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quand sont les réunions d'information pour bénévoles ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous organisons des réunions d'information tous les premiers mercredis du mois à 18h30. Inscription obligatoire par email à benevolat@chemin-de-vie.org</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Puis-je venir déposer des dons en nature ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, sur rendez-vous du lundi au vendredi de 9h à 17h. Nous acceptons les vêtements, denrées non périssables, et produits d'hygiène dans leur emballage d'origine.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment proposer un partenariat ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Contactez-nous à partenariat@chemin-de-vie.org avec les détails de votre proposition. Notre équipe étudiera votre projet sous 48h.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgences -->
+    <section class="emergency-section fade-in">
+        <div class="container">
+            <div class="emergency-card">
+                <div class="emergency-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="emergency-content">
+                    <h2>Urgence humanitaire</h2>
+                    <p>Pour les situations nécessitant une intervention rapide (sans-abri, crise familiale, aide d'urgence)</p>
+                    <div class="emergency-contacts">
+                        <a href="tel:+33142385695" class="emergency-btn">
+                            <i class="fas fa-phone"></i>
+                            Urgence sociale : 01 42 38 56 95
+                        </a>
+                        <a href="tel:115" class="emergency-btn secondary">
+                            <i class="fas fa-ambulance"></i>
+                            SAMU Social : 115
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 </body>
 </html>
