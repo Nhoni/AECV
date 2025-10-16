@@ -32,34 +32,165 @@
     </nav>
 </header>
 
-    <main>
+<main>
+    <!-- Hero Section -->
     <section class="hero-section fade-in">
-        <h1>Association d'Entraide Chemin de Vie</h1>
-        <p>Œuvrons ensemble pour apporter aide et réconfort aux plus démunis</p>
+        <div class="container">
+            <h1>Association d'Entraide Chemin de Vie</h1>
+            <p>Œuvrons ensemble pour apporter aide et réconfort aux plus démunis depuis 2005</p>
+            <div class="hero-buttons">
+                <a href="#don" class="btn-donate">
+                    <i class="fas fa-heart"></i> Faire un don
+                </a>
+                <a href="pages/about.html" class="btn-secondary">
+                    <i class="fas fa-info-circle"></i> Découvrir
+                </a>
+            </div>
+        </div>
     </section>
-    
-    <div class="grid grid-3">
-        <div class="card fade-in">
-            <h3><i class="fas fa-utensils"></i> Aide Alimentaire</h3>
-            <p>Distribution de colis alimentaires aux familles dans le besoin</p>
-        </div>
-        <div class="card fade-in">
-            <h3><i class="fas fa-home"></i> Soutien aux Réfugiés</h3>
-            <p>Accueil et accompagnement des personnes déplacées</p>
-        </div>
-        <div class="card fade-in">
-            <h3><i class="fas fa-globe-africa"></i> Projets Internationaux</h3>
-            <p>Construction d'écoles et centres de santé en Afrique</p>
-        </div>
-    </div>
 
-    <div class="donation-section fade-in">
-        <h2>Soutenez notre action</h2>
-        <p>Votre don nous permet de continuer nos missions humanitaires et d'apporter l'espoir à ceux qui en ont besoin</p>
-        <a href="https://www.paypal.com/donate" class="btn-donate" target="_blank">
-            <i class="fab fa-paypal"></i> Faire un don via PayPal
-        </a>
-    </div>
+    <!-- Vidéo de présentation -->
+    <section class="video-section fade-in">
+        <div class="container">
+            <h2>Notre mission en images</h2>
+            <p>Découvrez le quotidien de nos actions humanitaires</p>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Vidéo de présentation">
+                    <div class="video-overlay">
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos actions -->
+    <section class="actions-section fade-in">
+        <div class="container">
+            <h2>Nos domaines d'action</h2>
+            <div class="grid grid-3">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Aide alimentaire">
+                    <h3>Aide Alimentaire</h3>
+                    <p>Distribution de colis alimentaires et repas chauds aux familles dans le besoin en France et à l'international.</p>
+                    <a href="pages/about.html" class="action-link">En savoir plus →</a>
+                </div>
+
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Soutien aux réfugiés">
+                    <h3>Soutien aux Réfugiés</h3>
+                    <p>Accueil, hébergement et accompagnement des personnes déplacées dans leur intégration.</p>
+                    <a href="pages/about.html" class="action-link">En savoir plus →</a>
+                </div>
+
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Projets internationaux">
+                    <h3>Projets Internationaux</h3>
+                    <p>Construction d'écoles, de centres de santé et développement communautaire en Afrique.</p>
+                    <a href="pages/about.html" class="action-link">En savoir plus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie photos -->
+    <section class="gallery-section fade-in">
+        <div class="container">
+            <h2>Galerie de nos actions</h2>
+            <p>Quelques moments forts de notre engagement sur le terrain</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Distribution">
+                    <div class="gallery-caption">Distribution alimentaire</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1576765608622-2dfc1ba09396?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="École">
+                    <div class="gallery-caption">École construite en Afrique</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Soins">
+                    <div class="gallery-caption">Soins médicaux au congo</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Bénévoles">
+                    <div class="gallery-caption">Équipe de bénévoles</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chiffres clés -->
+    <section class="stats-section fade-in">
+        <div class="container">
+            <h2>Notre impact en chiffres</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="18">0</div>
+                    <div class="stat-label">Années d'engagement</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Projets réalisés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Bénévoles actifs</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Pays d'intervention</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section don -->
+    <section id="don" class="donation-section fade-in">
+        <div class="container">
+            <h2>Votre don change des vies</h2>
+            <p>Avec 25€, vous offrez un colis alimentaire pour une famille pendant une semaine.<br>
+               Avec 50€, vous participez à la scolarisation d'un enfant.<br>
+               Avec 100€, vous permettez des soins médicaux essentiels.</p>
+            <a href="https://www.paypal.com/donate" class="btn-donate" target="_blank">
+                <i class="fab fa-paypal"></i> Faire un don via PayPal
+            </a>
+        </div>
+    </section>
+
+    <!-- Témoignages accueil -->
+    <section class="testimonials-preview fade-in">
+        <div class="container">
+            <h2>Ils nous font confiance</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-preview">
+                    <div class="testimonial-text">
+                        "Une association qui agit avec le cœur et une réelle compassion."
+                    </div>
+                    <div class="testimonial-author">- Marie, Bénévole</div>
+                </div>
+                <div class="testimonial-preview">
+                    <div class="testimonial-text">
+                        "Grâce à eux, j'ai retrouvé espoir et dignité."
+                    </div>
+                    <div class="testimonial-author">- Pierre, Aidé</div>
+                </div>
+            </div>
+            <a href="pages/temoignages.html" class="btn-secondary">Voir tous les témoignages</a>
+        </div>
+    </section>
 </main>
 </body>
 </html>
